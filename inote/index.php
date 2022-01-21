@@ -30,7 +30,7 @@ if (isset( $_POST['snoEdit'])){
     $title = $_POST["titleEdit"];
     $description = $_POST["descriptionEdit"];
 
-  // Sql query to be executed
+  // Sql query to be executed all
   $sql = "UPDATE `notes` SET `title` = '$title' , `description` = '$description' WHERE `notes`.`sno` = $sno";
   $result = mysqli_query($conn, $sql);
   if($result){
