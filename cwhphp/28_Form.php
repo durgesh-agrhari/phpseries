@@ -68,25 +68,25 @@
       else{ 
         // Submit these to a database
         // Sql query to be executed 
-        $sql = "INSERT INTO `contacts` (`name`, `email`, `concern`, `dt`) VALUES ('$name', '$email', '$desc', current_timestamp())";
+        $sql = "INSERT INTO `form` (`name`, `email`, `concern`, `dt`) VALUES ('$name', '$email', '$desc', current_timestamp())";
         $result = mysqli_query($conn, $sql);
  
         if($result){
-          echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+          echo "<div class='alert alert-success alert-dismissible fade show' role='alert'>
           <strong>Success!</strong> Your entry has been submitted successfully!
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">×</span>
+          <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+            <span aria-hidden='true'></span>
           </button>
-        </div>';
+        </div>";
         }
         else{
             // echo "The record was not inserted successfully because of this error ---> ". mysqli_error($conn);
-            echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-          <strong>Error!</strong> We are facing some technical issue and your entry ws not submitted successfully! We regret the inconvinience caused!
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>';
+            echo "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+            <strong>Error!</strong> We are facing some technical issue and your entry ws not submitted successfully! We regret the inconvinience caused!
+            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+              <span aria-hidden='true'></span>
+            </button>
+          </div>";
         }
 
       }
@@ -97,7 +97,7 @@
 
 <div class="container mt-3">
 <h1>Contact us for your concerns</h1>
-    <form action="phposm/cwhphp/28_Form.php" method="post">
+    <form action="28_Form.php" method="post">
     <div class="form-group">
         <label for="name">Name</label>
         <input type="text" name="name" class="form-control" id="name" aria-describedby="emailHelp">

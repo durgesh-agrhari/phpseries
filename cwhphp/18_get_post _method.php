@@ -52,13 +52,13 @@
         $email = $_POST['email'];
         $password = $_POST['pass'];
       
-        echo "hey your form is submitted";
-      //   echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
-      //   <strong>Success!</strong> Your email ' . $email.' and password '. $password.' has been submitted successfully!
-      //   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      //     <span aria-hidden="true">×</span>
-      //   </button>
-      // </div>';
+        //echo "hey your form is submitted";
+        echo "<div class='alert alert-success alert-dismissible fade show' role='alert'>
+        <strong>Success!</strong> Your email ' . $email.' and password '. $password.' has been submitted successfully!
+        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+          <span aria-hidden='true'>×</span>
+        </button>
+      </div>";
 
       // Submit these to a database
 
@@ -68,7 +68,7 @@
 <!-- //phposm/cwhphp/18_get_post _method.php -->
 <div class="container mt-3">
 <h1>Please enter your email and password</h1>
-    <form action="/action_page.php" method="post">
+    <form action="18_get_post _method.php" method="post">
     <div class="form-group">
         <label for="email">Email address</label>
         <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
