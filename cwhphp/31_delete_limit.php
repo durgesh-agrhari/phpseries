@@ -17,7 +17,7 @@ else{
 }
 
 
-$sql = "DELETE FROM `phptrip` WHERE `dest` = 'Russia' LIMIT 13";
+$sql = "DELETE FROM `phptrip` WHERE `dest` = 'KIET' LIMIT 1";
 $result = mysqli_query($conn, $sql);
 $aff = mysqli_affected_rows($conn);
 echo "<br>Number of affected rows: $aff <br>";
